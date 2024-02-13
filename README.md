@@ -4,7 +4,7 @@
 
 # Blog App
 
-The Blog App is a basic web application that allows users to create, view, and manage blog posts. It provides a platform for bloggers to share their thoughts and ideas with the community, it's always still under developement.
+The Blog App is a basic web application that allows users to create, view, and manage blog posts. It provides a platform for bloggers to share their thoughts and ideas with the community, it's always still under developement it is a way to learn how to use Redux and Saga technologie.
 
 ## Features
 
@@ -28,7 +28,7 @@ The Blog App is a basic web application that allows users to create, view, and m
   - Spring Data JPA: Part of the Spring Data project, simplifies data access in Spring applications.
   - MySQL: Relational database management system for storing application data.
   - Redis: In-memory data structure store used for caching recent blog posts.
+    
+## How to use the App
+  - You will find each part (front and back in a separate branch) 
 
-
-  
-Feel free to customize this README to include any additional information specific to your application!
