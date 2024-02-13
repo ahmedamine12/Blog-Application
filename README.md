@@ -26,7 +26,7 @@ The Blog App is a basic web application that allows users to create, view, and m
 - **Backend**:
   - Spring Boot: Framework for building Java-based web applications.
   - Spring Data JPA: Part of the Spring Data project, simplifies data access in Spring applications.
-  - MySQL: Relational database management system for storing application data.
+  - PostgreSQL: Relational database management system for storing application data.
   - Redis: In-memory data structure store used for caching recent blog posts.
     
 ## How to use the App
