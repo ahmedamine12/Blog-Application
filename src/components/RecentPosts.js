@@ -16,20 +16,21 @@ const RecentPosts = () => {
 
   return (
     <Container maxWidth="md">
-      <Typography variant="h4" component="h2" gutterBottom>Recent Posts</Typography>
+      <Typography variant="h4" component="h2" gutterBottom style={{ color: '#3f51b5', marginBottom: '16px' }}>Recent Posts</Typography>
+      <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'flex-end' }}>
+        <Button variant="contained" color="primary" component={Link} to="/create-post">Create New Post</Button>
+      </div>
       {recentPosts.map(post => (
-        <Card key={post.id} variant="outlined" style={{ marginBottom: '16px' }}>
+        <Card key={post.id} variant="outlined" style={{ marginBottom: '16px', backgroundColor: '#e8eaf6' }}>
           <CardContent>
-            <Typography variant="h6" gutterBottom>{post.title}</Typography>
+            <Typography variant="h6" gutterBottom style={{ color: '#3f51b5' }}>{post.title}</Typography>
             <Typography variant="body1" color="textSecondary">{post.content}</Typography>
-            <Typography variant="subtitle2" color="textSecondary">Author: {post.author.username}</Typography> 
+            <Typography variant="subtitle2" color="textSecondary" style={{ marginTop: '8px' }}>Author: {post.author.username}</Typography> 
           </CardContent>
           <Divider />
         </Card>
       ))}
-      <div style={{ marginTop: '16px' }}>
-        <Button variant="contained" color="primary" component={Link} to="/create-post">Create New Post</Button>
-      </div>
+     
     </Container>
   );
 };

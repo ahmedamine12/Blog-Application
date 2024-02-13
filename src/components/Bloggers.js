@@ -25,28 +25,29 @@ const Bloggers = () => {
 
   return (
     <Container maxWidth="md" sx={{ mt: 4 }}>
-      <Typography variant="h4" component="h2" gutterBottom>Bloggers</Typography>
-      <Grid container spacing={2}>
-        {users.map(user => (
-          <Grid item xs={12} sm={6} md={4} key={user.id}>
-            <Paper sx={{ p: 2 }} elevation={3}>
-              <Box display="flex" alignItems="center">
-                <Avatar sx={{ bgcolor: getRandomColor(), marginRight: 2 }}>{user.username[0]}</Avatar>
-                <Box>
-                  <Typography variant="h6">{user.username}</Typography>
-                  <Typography variant="body2" color="textSecondary">{user.email}</Typography>
+        <Typography variant="h4" component="h2" gutterBottom>Bloggers</Typography>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
+          <Link to="/create-user" style={{ textDecoration: 'none' }}>
+            <Button variant="contained" color="primary">Create New Blogger</Button>
+          </Link>
+        </div>
+        <Grid container spacing={2}>
+          {users.map(user => (
+            <Grid item xs={12} sm={6} md={4} key={user.id}>
+              <Paper sx={{ p: 2 }} elevation={3}>
+                <Box display="flex" alignItems="center">
+                  <Avatar sx={{ bgcolor: getRandomColor(), marginRight: 2 }}>{user.username[0]}</Avatar>
+                  <Box>
+                    <Typography variant="h6">{user.username}</Typography>
+                    <Typography variant="body2" color="textSecondary">{user.email}</Typography>
+                  </Box>
                 </Box>
-              </Box>
-            </Paper>
-          </Grid>
-        ))}
-      </Grid>
-      <div>
-        <Link to="/create-user" style={{ textDecoration: 'none' }}>
-          <Button variant="contained" color="primary" sx={{ mt: 2 }}>Create New Blogger</Button>
-        </Link>
-      </div>
-    </Container>
+              </Paper>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    
   );
 };
 
