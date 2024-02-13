@@ -12,6 +12,8 @@ const AllPosts = () => {
     dispatch(getAllPosts());
   }, [dispatch]);
 
+  
+
   return (
     <Container maxWidth="md">
       <Typography variant="h4" component="h2" gutterBottom>All Posts</Typography>

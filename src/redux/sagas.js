@@ -38,7 +38,9 @@ function* getAllUsers() {
 
 function* createPost(action) {
   try {
-    yield axios.post('http://localhost:8088/api/posts/1', action.payload);
+    console.log("**********",action.payload);
+    
+    yield axios.post(`http://localhost:8088/api/posts/${action.payload.userId}`, action.payload);
     yield put({ type: CREATE_POST_SUCCESS });
   } catch (error) {
     yield put({ type: CREATE_POST_FAILURE, payload: error.message });

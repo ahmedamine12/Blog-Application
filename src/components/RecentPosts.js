@@ -12,6 +12,8 @@ const RecentPosts = () => {
     dispatch(getRecentPosts());
   }, [dispatch]);
 
+  console.log(recentPosts);
+
   return (
     <Container maxWidth="md">
       <Typography variant="h4" component="h2" gutterBottom>Recent Posts</Typography>
@@ -20,6 +22,7 @@ const RecentPosts = () => {
           <CardContent>
             <Typography variant="h6" gutterBottom>{post.title}</Typography>
             <Typography variant="body1" color="textSecondary">{post.content}</Typography>
+            <Typography variant="subtitle2" color="textSecondary">Author: {post.author.username}</Typography> 
           </CardContent>
           <Divider />
         </Card>
