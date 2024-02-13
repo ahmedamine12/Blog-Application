@@ -1,4 +1,5 @@
 #Blog App
+
 The Blog App is a web application that allows users to create, view, and manage blog posts. It provides a platform for bloggers to share their thoughts and ideas with the community.
 
 #Features
