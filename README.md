@@ -8,7 +8,7 @@ The Blog App is a basic web application that allows users to create, view, and m
 
 ## Features
 
-- **Create Blog Posts**: Authenticated users can create new blog posts, including providing a title, content, and selecting an author.
+- **Create Blog Posts**: Create new blog posts, including providing a title, content, and selecting an author.
 - **View Recent Posts**: Users can view the most recent blog posts on the home page, including the title and content.
 - **View All Posts**: Users can access a page that displays all blog posts, allowing them to browse through past posts.
 - **Manage Users**: Administrators can manage users, including creating new user accounts and viewing existing user profiles.
